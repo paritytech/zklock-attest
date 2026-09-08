@@ -8,7 +8,7 @@
     "len": 56,
     "root": "0xafec1f29331304b4bb4db0dff3730311f31b508e2258373ac894bbaec62ca972"
   },
-  "indexedAt": "2026-09-08T01:06:16.888Z",
+  "indexedAt": "2026-09-08T13:53:02.834Z",
   "entries": [
     {
       "setId": 1588,
@@ -23,6 +23,13 @@
       "bytes": 1704,
       "contentHash": "0xf735529dec5a793694acbad93b31859f9b685924d71f72364968cd5fb40aba34",
       "cid": "bafk2bzaced3tkuu55rnhsnuuvs5nsozrqwpzw2czetlr64rwjfum2x5ubk5di"
+    },
+    {
+      "setId": 1614,
+      "file": "handover-001614.json",
+      "bytes": 1704,
+      "contentHash": "0xebb9541c5cbd0bf1e52f74e888bed15f4b66f06850d3a36f7471dbb231525b8b",
+      "cid": "bafk2bzacedv3sva4ls6qx4pff52orcf62fpuwzxqnbinhi3pory5xmrrkjnyw"
     }
   ]
 }
