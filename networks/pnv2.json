@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "pnv2",
+  "label": "Paseo Next V2",
+  "chains": {
+    "relay": {
+      "genesisHash": "0x374057be67b355151f271ff70c3db98308c62c8adc48dc6724b6a009a1a014fd",
+      "rpcs": [
+        "wss://paseo-rpc.n.dwellir.com",
+        "wss://paseo.dotters.network",
+        "wss://paseo.ibp.network"
+      ],
+      "sessionBlocks": 600,
+      "verifiedAt": "2026-09-07"
+    },
+    "assetHub": {
+      "genesisHash": "0x4349b00e54897e21196fd331015fc5be0f14e118beb0375ed2bb1793737bb57a",
+      "rpcs": ["wss://paseo-asset-hub-next-rpc.polkadot.io"],
+      "paraId": 1500,
+      "verifiedAt": "2026-09-07",
+      "note": "Measured live from the listed endpoint. Other repositories still pin 0x23e730eb…, which this endpoint no longer serves; see docs/network-descriptor-proposal.md."
+    },
+    "bulletin": {
+      "genesisHash": "0x8cfe6717dc4becfda2e13c488a1e2061ff2dfee96e7d031157f72d36716c0a22",
+      "rpcs": ["wss://paseo-bulletin-next-rpc.polkadot.io"],
+      "ipfsGateways": ["https://paseo-bulletin-next-ipfs.polkadot.io"],
+      "verifiedAt": "2026-09-07"
+    }
+  },
+  "producer": {
+    "relayNodeRpc": "ws://127.0.0.1:9955",
+    "bootstrapRelayRpc": "wss://paseo-rpc.n.dwellir.com",
+    "chainSpecId": "paseo",
+    "paraHeadMode": "relayParentTrie",
+    "paraHeadModeReason": "The Paseo runtime restricts the BEEFY leaf's parachain-head root to Parachains::get() plus a whitelist holding para 4009, so para 1500 is absent from the leaf and must be proven by a Paras.Heads trie proof against the relay parent state root.",
+    "reviveAccountInfoLayout": 1,
+    "registryDeployment": "deployments/paseo-next-v2-registry.json",
+    "workDirectory": ".tmp/pnv2-node"
+  },
+  "anchor": {
+    "sp1VerificationKey": "0x007d1720c695842ed647a1a72e981751f9b5e26fc5ca038523b23430a1292f08",
+    "sp1ProgramSha256": "cc74b11f48a28a3c8a730f4aa6c9ee865bc474144df02b58f40c3c5f8cfa02c3",
+    "provisionedAuthoritySet": {
+      "id": 1587,
+      "len": 56,
+      "root": "0xafec1f29331304b4bb4db0dff3730311f31b508e2258373ac894bbaec62ca972"
+    },
+    "note": "provisionedAuthoritySet is a pinned BEEFY checkpoint, not genesis-rooted lineage. A lock advances it by handover replay (ADR 0006); this value only seeds an unprovisioned lock."
+  }
+}
