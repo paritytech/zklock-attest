@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "network": "pnv2",
+  "relayGenesisHash": "0x374057be67b355151f271ff70c3db98308c62c8adc48dc6724b6a009a1a014fd",
+  "sp1VerificationKey": "0x007d1720c695842ed647a1a72e981751f9b5e26fc5ca038523b23430a1292f08",
+  "provisionedAuthoritySet": {
+    "id": 1587,
+    "len": 56,
+    "root": "0xafec1f29331304b4bb4db0dff3730311f31b508e2258373ac894bbaec62ca972"
+  },
+  "indexedAt": "2026-09-08T01:06:16.888Z",
+  "entries": [
+    {
+      "setId": 1588,
+      "file": "handover-001588.json",
+      "bytes": 1704,
+      "contentHash": "0xf766b3059ad192f96fc2199431ff484c4a75a3b1ef4b1b3c9f35119c5f4894d2",
+      "cid": "bafk2bzaced3wnmyftlizf6lpyimzimp7jbgeu5ndwhxuwgz4t42rdhc7jckne"
+    },
+    {
+      "setId": 1591,
+      "file": "handover-001591.json",
+      "bytes": 1704,
+      "contentHash": "0xf735529dec5a793694acbad93b31859f9b685924d71f72364968cd5fb40aba34",
+      "cid": "bafk2bzaced3tkuu55rnhsnuuvs5nsozrqwpzw2czetlr64rwjfum2x5ubk5di"
+    }
+  ]
+}
