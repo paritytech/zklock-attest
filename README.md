@@ -1,3 +1,5 @@
+> The following is a prototype, reference implementation, and proof-of-concept. This open source code is provided for research, experimentation, and developer education only. This code has not been audited, is actively experimental, and may contain bugs, vulnerabilities, or incomplete features. Use at your own risk.
+
 # zklock-attest
 
 Public, permanent attestation log for zkLock — an offline physical lock whose trust is
