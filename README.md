@@ -11,10 +11,20 @@ that must stay publicly fetchable forever.
 
 ## Layout
 
+Everything is keyed by network id. Each network is a triple — BEEFY relay, Asset Hub
+(registry), Bulletin (distribution) — and its directory is self-contained: profile plus log
+is everything a verifier needs.
+
 ```text
-handover-log/<network>/handover-<setid>.json   one attestation per authority set
-handover-log/<network>/index.json              per-entry size, Blake2b-256 hash, Bulletin CID
+networks/<network>.json                        chain identity, provisioned BEEFY anchor,
+                                               SP1 verification key (the trust contract)
+handover-log/<network>/handover-<setid>.json   one attestation per authority set, append-only
+handover-log/<network>/index.json              per-entry size, Blake2b-256 hash, Bulletin CID,
+                                               plus the network id and anchor it belongs to
 ```
+
+Networks currently published: `pnv2` (Paseo Next V2). Adding a network adds one profile and
+one log directory; nothing is shared across networks.
 
 An attestation is a BEEFY commitment signed by authority set N together with the MMR leaf
 naming set N+1's keyset commitment. It can only be captured while set N is live (one relay
@@ -46,5 +56,7 @@ with a gap is rejected rather than skipping a rotation.
 
 - Entries are append-only; an existing `handover-<setid>.json` never changes.
 - `index.json` records each entry's byte size, Blake2b-256 content hash, and CID.
-- The signing chain bottoms out at each network's provisioned BEEFY authority set, pinned in
-  `zklock`'s `networks/<id>.json` profile — this repository asserts lineage, not the anchor.
+- The signing chain bottoms out at each network's provisioned BEEFY authority set, published
+  in `networks/<network>.json` and pinned in the `zklock` repository — this repository asserts
+  lineage; locks carry their own anchor.
+- Profiles are mutable (endpoints rot, anchors get re-dated); attestations never are.
