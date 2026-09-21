@@ -34,7 +34,7 @@
     "paraHeadMode": "relayParentTrie",
     "paraHeadModeReason": "The Paseo runtime restricts the BEEFY leaf's parachain-head root to Parachains::get() plus a whitelist holding para 4009, so para 1500 is absent from the leaf and must be proven by a Paras.Heads trie proof against the relay parent state root.",
     "reviveAccountInfoLayout": 1,
-    "registryDeployment": "deployments/paseo-next-v2-registry.json",
+    "registryDeployment": "deployments/paseo-next-v2-registry-v2.json",
     "workDirectory": ".tmp/pnv2-node"
   },
   "anchor": {

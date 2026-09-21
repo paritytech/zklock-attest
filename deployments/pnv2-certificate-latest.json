@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "network": "pnv2",
+  "cid": "bafk2bzacecyzhsrb3u6ncflgeizakee2bgcxo6lkuhuvr6emwhgffk7ipztlg",
+  "contentHash": "0xb193ca21dd3cd11566223205109a098577796aa1e958f88cb1cc52abe87e66b3",
+  "certificateBytes": 9195,
+  "assetHubBlockNumber": 819113,
+  "beefyBlockNumber": 1163912,
+  "chainTimeMs": 1790011932000,
+  "bulletinBlockNumber": 1978337,
+  "publishedAt": "2026-09-21T18:04:54.343Z"
+}
