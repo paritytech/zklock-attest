@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "network": "pnv2",
-  "cid": "bafk2bzacecfp7z5rn3pf5dhbfsfrb73s2fleipmmb2uvqtgjgks7fqvcoslte",
-  "contentHash": "0x8affe7b16ede5e8ce12c8b10ff72d156443d8c0ea9584cc932a5f2c2a2749732",
+  "cid": "bafk2bzaceb3jxkrggdt7dfsw77e3q2ukapxnkikj26tyhsy44dghaiy4egzy2",
+  "contentHash": "0x769baa2630e7f19656ffc9b86a8a03eed52149d7a783cb1ce0cc70231c21b38d",
   "certificateBytes": 9328,
-  "assetHubBlockNumber": 1137298,
-  "beefyBlockNumber": 1270537,
-  "chainTimeMs": 1790651772000,
-  "bulletinBlockNumber": 2084533,
-  "publishedAt": "2026-09-29T03:46:58.550Z"
+  "assetHubBlockNumber": 1147917,
+  "beefyBlockNumber": 1274095,
+  "chainTimeMs": 1790673372000,
+  "bulletinBlockNumber": 2088103,
+  "publishedAt": "2026-09-29T09:49:57.637Z"
 }
